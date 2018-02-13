@@ -23,7 +23,7 @@ export class HomeComponent implements OnInit {
   isMaps(path){
     var titlee = this.location.prepareExternalUrl(this.location.path());
     titlee = titlee.slice( 1 );
-
+    titlee = titlee.split('/').pop();
     if(path == titlee){
       return false;
     }

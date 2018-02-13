@@ -15,7 +15,8 @@ export class SidebarComponent implements OnInit {
 
   ngOnInit() {
     $.getScript('../../assets/js/sidebar-moving-tab.js');
-    this.menuItems = ROUTES.filter(menuItem => menuItem);
+    // this.menuItems = ROUTES.filter(menuItem => menuItem);
+    this.menuItems = ROUTES;
   }
 
 }
